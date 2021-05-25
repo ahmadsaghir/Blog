@@ -1,0 +1,18 @@
+com[pser installer: 
+composer global require laravel/installer
+
+create new projetc:
+composer create-project --prefer-dist laravel/laravel blog
+
+run project:
+php artisan serve
+
+create table:
+php artisan make:migration create_users_table
+
+run all migration:
+php artisan migrate
+
+php artisan make:model Model_Name -mc
+
+php artisan vendor:publish --tag=laravel-pagination
